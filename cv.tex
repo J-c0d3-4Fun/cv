@@ -93,6 +93,16 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
+% Define a custom command to display certifications without numbering
+\newcommand{\Certifications}[1]{%
+    \begin{multicols*}{1}
+        \begin{itemize}[label=]
+            #1
+        \end{itemize}
+    \end{multicols*}
+}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -140,9 +150,9 @@
       {MEDITECH}{Canton, MA}
       \resumeItemListStart
         \resumeItem{Deployed 5 cloud-native services and applications to support internal operations and customer-facing environments, catering to diverse business needs and enhancing overall service delivery.}
-        \resumeItem{Automated the creation and management of over 60 firewall rules using Terraform, assuring seamless integration with existing infrastructure and enhancing network security measure.}
+        \resumeItem{Automated the creation and management of over 117 firewall rules using Terraform, assuring seamless integration with existing infrastructure and enhancing network security measure.}
         \resumeItem{Provided troubleshooting support to address 20 network issues reported by customers, ensuring timely resolution and maintaining high levels of customer satisfaction.}
-        \resumeItem{Utilized OpenSSL to generate 15+ Certificate Signing Requests (CSRs) for X.509 certificates, and successfully installed certificates in the Windows Store Manager, securing public communication channels.}
+        \resumeItem{Leveraged OpenSSL to generate 15+ Certificate Signing Requests (CSRs) for X.509 certificates, and successfully installed certificates in the Windows Store Manager, securing public communication channels.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -153,7 +163,7 @@
         \resumeItem{Administered Active Directory (AD) by creating a combined 50 users, groups and organizational units following least privilege, complying with security standards and reducing risk of unauthorized access.}
         \resumeItem{Provided Microsoft Exchange email support to 300 users, allowing seamless communication for users and troubleshooting any issues, maintaining uninterrupted email services.}
         \resumeItem{Utilized Mimecast to analyze and respond to 10+ alerts daily, effectively identifying and mitigating spam and phishing threats, thus bolstering enterprise security posture and protecting sensitive data.}
-        \resumeItem{Improved security posture for 75 endpoints by managing patch updates, assisting end-users, remotely installing software, and proactively pushing updates to enhance endpoint security.} 
+        % \resumeItem{Improved security posture for 75 endpoints by managing patch updates, assisting end-users, remotely installing software, and proactively pushing updates to enhance endpoint security.} 
     \resumeItemListEnd
 
   \resumeSubheading
@@ -162,8 +172,8 @@
     \resumeItemListStart
       \resumeItem{Implemented user account management in Azure AD(Microsoft Entra), providing access for 150 franchisees and company employees while enhancing security through the configuration of multi-factor authentication (MFA) to protect user accounts in the cloud environment.}
       \resumeItem{Conducted remote troubleshooting and diagnostics of switches, routers, and audio equipment located in the 20 store's network closet to promptly identify and resolve device issues, ensuring rapid restoration of network connectivity and uninterrupted operations for stores.}
-      \resumeItem{Implemented static IP addressing configuration for 10+ devices via the firewall to ensure secure and reliable connectivity for franchise and corporate stores, enhancing network stability and operational security.}
-      \resumeItem{Assisted in managing the KnowBe4 platform and contributed to running the security awareness program for over 100 employees, improving cybersecurity training and resources, resulting in a higher employee awareness and compliance with security policies.}
+      \resumeItem{Deployed static IP addressing configuration for 10+ devices via the firewall to ensure secure and reliable connectivity for franchise and corporate stores, enhancing network stability and operational security.}
+      % \resumeItem{Assisted in managing the KnowBe4 platform and contributed to running the security awareness program for over 100 employees, improving cybersecurity training and resources, resulting in a higher employee awareness and compliance with security policies.}
   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -172,14 +182,13 @@
 %-----------Certifications-----------
 \section{Certifications}
     \resumeSubHeadingListStart
-    \begin{multicols}{2}
-      \begin{itemize}[noitemsep]
-        \small{
-      \resumeSubItem{CompTIA Security+ (Sec+)} \\
-      \resumeSubItem{AWS Certified Cloud Practioner (AWS CCP)} \\
-      \resumeSubItem{Hashicorp Certified: Terraform Associate (003)} \\
-      }
-  \resumeItemListEnd
+    \begin{multicols*}{CompTIA Security+ (Sec+)}
+        % \resumeSubItem{CompTIA Security+ (Sec+)} \\
+        \resumeSubItem{AWS Certified Cloud Practioner (AWS CCP)} \\
+        \resumeSubItem{Hashicorp Certified: Terraform Associate (003)} \\
+    \resumeItemListEnd
+
+
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
