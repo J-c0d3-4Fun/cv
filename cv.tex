@@ -14,6 +14,7 @@
 \input{glyphtounicode}
 
 
+
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -120,27 +121,20 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Gwinnett Technical College}{Lawrenceville, GA}
-      {Associate's in Cybersecurity}{Aug. 2021 -- Dec. 2023}
-  \resumeSubHeadingListEnd
-
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {IT Security Adminstrator (Freelance)}{March 2023 -- Present}
+      {IT Security Adminstrator/ Test Engineer (Freelance)}{March 2023 -- Present}
       {Meshify}{Austin, TX}
       \resumeItemListStart
         \resumeItem{Streamlined user administration across multiple platforms while adhering to Role-Based Access Control (RBAC) standards. This initiative resulted in a notable reduction of \$4,000 in monthly operational costs.}
         \resumeItem{Contributed to achieving SOC 2 compliance by conducting audits of 97 vendors utilized by the organization,  ensuring adherence to security standards and regulatory requirements.}
         \resumeItem{Orchestrated the integration of single sign-on (SSO) across 3 applications using Google Cloud Platform/Workspace, enhancing user authentication and access management efficiency.}
-        \resumeItem{Configured and implemented 2 dynamic application security testing solutions within the CircleCI CI/CD pipeline, providing thorough black box testing of corporate websites and helping to develop strategies to remediate potential vulnerabilities and threats.}
+        \resumeItem{Configured and implemented 2 dynamic application security testing solutions within the CircleCI CI/CD pipeline, providing thorough black box testing of applications and helping to develop strategies to remediate potential vulnerabilities and threats.}
+        \resumeItem{Harnessed Terraform to automate infrastructure provisioning and management for AWS environments, adhering to Infrastructure as Code (IaC) principles}
+        \resumeItem{Crafted and upheld security policies and procedures to ensure robust protection and compliance.}
       \resumeItemListEnd
       
 
@@ -150,9 +144,11 @@
       {MEDITECH}{Canton, MA}
       \resumeItemListStart
         \resumeItem{Deployed 5 cloud-native services and applications to support internal operations and customer-facing environments, catering to diverse business needs and enhancing overall service delivery.}
-        \resumeItem{Automated the creation and management of over 117 firewall rules using Terraform, assuring seamless integration with existing infrastructure and enhancing network security measure.}
+        \resumeItem{Automated the creation and management of over 200 firewall rules using Terraform, assuring seamless integration with existing infrastructure and enhancing network security measure.}
         \resumeItem{Provided troubleshooting support to address 20 network issues reported by customers, ensuring timely resolution and maintaining high levels of customer satisfaction.}
         \resumeItem{Leveraged OpenSSL to generate 15+ Certificate Signing Requests (CSRs) for X.509 certificates, and successfully installed certificates in the Windows Store Manager, securing public communication channels.}
+        \resumeItem{Administered server patch management through WSUS, ensuring systems remained secure with the latest updates and security patching.}
+        \resumeItem{Automated tenant provisioning and infrastructure maintenance using Terraform, with a focus on creating VPCs, APIs, IAM policies, and managing virtual machines (VMs) to streamline cloud deployments.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -163,7 +159,7 @@
         \resumeItem{Administered Active Directory (AD) by creating a combined 50 users, groups and organizational units following least privilege, complying with security standards and reducing risk of unauthorized access.}
         \resumeItem{Provided Microsoft Exchange email support to 300 users, allowing seamless communication for users and troubleshooting any issues, maintaining uninterrupted email services.}
         \resumeItem{Utilized Mimecast to analyze and respond to 10+ alerts daily, effectively identifying and mitigating spam and phishing threats, thus bolstering enterprise security posture and protecting sensitive data.}
-        % \resumeItem{Improved security posture for 75 endpoints by managing patch updates, assisting end-users, remotely installing software, and proactively pushing updates to enhance endpoint security.} 
+        \resumeItem{Improved security posture for 75 endpoints by managing patch updates, assisting end-users, remotely installing software, and proactively pushing updates to enhance endpoint security.} 
     \resumeItemListEnd
 
   \resumeSubheading
@@ -173,20 +169,27 @@
       \resumeItem{Implemented user account management in Azure AD(Microsoft Entra), providing access for 150 franchisees and company employees while enhancing security through the configuration of multi-factor authentication (MFA) to protect user accounts in the cloud environment.}
       \resumeItem{Conducted remote troubleshooting and diagnostics of switches, routers, and audio equipment located in the 20 store's network closet to promptly identify and resolve device issues, ensuring rapid restoration of network connectivity and uninterrupted operations for stores.}
       \resumeItem{Deployed static IP addressing configuration for 10+ devices via the firewall to ensure secure and reliable connectivity for franchise and corporate stores, enhancing network stability and operational security.}
-      % \resumeItem{Assisted in managing the KnowBe4 platform and contributed to running the security awareness program for over 100 employees, improving cybersecurity training and resources, resulting in a higher employee awareness and compliance with security policies.}
+      \resumeItem{Assisted in managing the KnowBe4 platform and contributed to running the security awareness program for over 100 employees, improving cybersecurity training and resources, resulting in a higher employee awareness and compliance with security policies.}
   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gwinnett Technical College}{Lawrenceville, GA}
+      {Associate's in Cybersecurity}{Aug. 2021 -- Dec. 2023}
+  \resumeSubHeadingListEnd
 
 %-----------Certifications-----------
 \section{Certifications}
     \resumeSubHeadingListStart
-    \begin{multicols*}{CompTIA Security+ (Sec+)}
-        % \resumeSubItem{CompTIA Security+ (Sec+)} \\
-        \resumeSubItem{AWS Certified Cloud Practioner (AWS CCP)} \\
-        \resumeSubItem{Hashicorp Certified: Terraform Associate (003)} \\
-    \resumeItemListEnd
+    \resumeSubItem{CompTIA Security+ (Sec+)}
+    {AWS Certified Cloud Practitioner (AWS CCP)}
+    {Hashicorp Certified: Terraform Associate (003)}
+    \resumeSubItem{Certified Kubernetes Administrator (CKA)}
+    \resumeSubHeadingListEnd
 
 
 
@@ -195,13 +198,12 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{CI/CD Platforms}{: CircleCI} \\
-     \textbf{Languages}{: Python, HTML/CSS,} \\
-     \textbf{Automation Tools}{: Terraform, Ansible} \\
-     \textbf{Orchestratation Tools}{: Kubernetes} \\
-     \textbf{Developer Tools}{: Git, Postman, AWS, Azure, Docker, Google Cloud Platform, VS Code, Powershell, Bash } \\
-     \textbf{Security Tools}{: Datadog SIEM, Dastardly by Burpsuite, Sonarqube, OWASP Zed Attack Proxy (ZAP), Wireshark} \\
-
-
+     \textbf{Languages}{: Python, Terraform, Ansible, Powershell, Bash } \\
+     \textbf{Containerization and Orchestration}{: Kubernetes (K8s), Docker, Docker Registry  Elastic Container Service (ECS), Elastic Container Registry (ECR) } \\
+     \textbf{Developer Tools}{: Git, Postman, AWS, Azure, Google Cloud Platform, VS Code, Github, Bitbucket } \\
+     \textbf{Security Tools}{: Datadog SIEM, Dastardly by Burpsuite, Sonarqube, Bitdefender, OWASP Zed Attack Proxy (ZAP), Wireshark, MFA} \\
+     \textbf{Compliance}{: GPDR, SOC 2}
+     \textbf{Collaboration}{: Slack, Atlassian (Jira, Confluence), Discord, MS Teams, Google Workspace, MS O365}
 
     }}
  \end{itemize}
