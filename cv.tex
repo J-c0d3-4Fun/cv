@@ -129,15 +129,17 @@
       {Security Engineer (Contract)}{Feb 2025 -- Present}
       {Meshify}{Remote}
       \resumeItemListStart
-        \resumeItem{Supported SOC 2 audits by providing security documentation, evidence, and compliance reporting.}
-        \resumeItem{Monitored Jira ticketing system and coordinated cross-functional responses by triaging and assigning issues to the appropriate technical teams.}
-        \resumeItem{Deployed and managed containerized applications in Kubernetes, leveraging namespaces, Helm charts, and network services for scalable infrastructure.}
-        \resumeItem{Deployed Dastardly through automated CI/CD pipelines using CircleCI to perform dynamic application security testing (DAST)}
-        \resumeItem{Managed and secured SaaS applications by implementing 2FA and SSO for passwordless authentication across several applications, enhancing security and simplifying user access management.}
-        \resumeItem{Conducted disaster recovery (DR) testing to ensure the integrity and availability of critical systems, validating backup processes and recovery procedures in the event of an outage.}
-        \resumeItem{Documented disaster recovery test results to support future audits and ensure compliance with recovery objectives.}
-        \resumeItem{Replaced instances and upgraded instance types to optimize performance, scalability, and cost-efficiency in cloud environments.}
-        \resumeItem{Thrived in fast-paced, rapidly changing environments, consistently adapting to evolving priorities and delivering high-quality results under pressure.}
+        \resumeItem{Led API testing initiatives for the authentication feature by reviewing technical documentation, designing targeted test cases, and collaborating with developers; increased testing ticket throughput by 60\%}
+        \resumeItem{Executed and maintained PostgreSQL/SQL queries for API validation, including schema reviews, table descriptions, cross-database connections, and controlled data insert/update operations to confirm accurate functionality for create, delete, and update workflows.}
+        \resumeItem{Performed peer code reviews prior to deployment, validating environment configurations and product versions; prevented deployment errors.}
+        \resumeItem{Integrated Oxipng into CI/CD pipelines to compress large images without quality loss; optimized website performance and reduced bandwidth usage.}
+        \resumeItem{Integrated Dastardly into automated CI/CD pipelines using CircleCI to perform DAST; identified and remediated vulnerabilities earlier in the development cycle, reducing production security incidents.}
+        \resumeItem{Deployed and managed containerized applications in Kubernetes by configuring namespaces, Helm charts, and network services; enabled scalable, fault-tolerant infrastructure.}
+        \resumeItem{Managed and secured SaaS applications by implementing 2FA and SSO for passwordless authentication; strengthened access security and simplified user onboarding across multiple platforms.}
+        \resumeItem{Optimized cloud infrastructure by replacing instances and upgrading instance types; improved performance, enhanced scalability, and reduced operational costs.}
+        \resumeItem{Supported SOC 2 audits by compiling technical evidence, producing security documentation, and streamlining compliance reporting.}
+        \resumeItem{Monitored and triaged Jira tickets across security and development teams, improving resolution time by \textbf{35\%} through structured prioritization and follow-up.}
+        \resumeItem{Conducted DR testing by validating backup integrity and recovery procedures; ensured availability and compliance with RTOs, and documented results for audit readiness.}
       \resumeItemListEnd
 
   \resumeSubheading
@@ -195,40 +197,42 @@
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Gwinnett Technical College}{Lawrenceville, GA}
-      {Associate's in Cybersecurity}{Aug. 2021 -- Dec. 2023}
-  \resumeSubHeadingListEnd
+\section*{Education}
+\textbf{Western Governors University} \hfill Sept 2025 -- Present \\
+\textit{B.S. in Computer Science, Remote} \\
+\textbf{Gwinnett Technical College} \hfill Aug 2021 -- Dec 2023 \\
+\textit{Associate's in Cybersecurity, Lawrenceville, GA}
 
 %-----------Certifications-----------
-\section{Certifications}
-    \resumeSubHeadingListStart
-    \resumeSubItem{CompTIA Security+ (Sec+)}
-    {AWS Certified Cloud Practitioner (AWS CCP)}
-    {Hashicorp Certified: Terraform Associate (003)}
-    \resumeSubItem{Certified Kubernetes Administrator (CKA)}
-    \resumeSubHeadingListEnd
-
+\section*{Certifications}
+\begin{tabularx}{\textwidth}{X X}
+CompTIA Security+ & Certified Kubernetes Administrator (CKA) \\
+AWS Certified Cloud Practitioner & HashiCorp Terraform Associate (003) \\
+AWS Solutions Architect (AWSSAA) & Red Hat Certified System Administrator (RHCSA) \\
+\end{tabularx}
 
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{CI/CD Platforms}{: CircleCI} \\
-     \textbf{GitOps}{: ArgoCD} \\
-     \textbf{Languages}{: Python, Terraform, Ansible, Powershell, Bash } \\
-     \textbf{Containerization and Orchestration}{: Kubernetes (K8s), Docker, Docker Registry  Elastic Container Service (ECS), Elastic Container Registry (ECR), Helm } \\
-     \textbf{Developer Tools}{: Git, Postman, AWS, Azure, Google Cloud Platform, VS Code, Github, Bitbucket } \\
-     \textbf{Security Tools}{: Datadog SIEM, Dastardly by Burpsuite, Sonarqube, Bitdefender, OWASP Zed Attack Proxy (ZAP), Wireshark, MFA} \\
-     \textbf{Compliance}{: GPDR, SOC 2} \\
-     \textbf{Collaboration}{: Slack, Atlassian (Jira, Confluence), Discord, MS Teams, Google Workspace, MS O365}
+    \textbf{Languages / Development}{: Golang (Go), Python, Bash, PowerShell, Terraform, Ansible} \\
+    \textbf{AppSec / Security Tools}{: Dastardly (DAST), OWASP ZAP, Burp Suite, Wireshark, Metasploit, MFA} \\
+    \textbf{Containers / Orchestration}{: Kubernetes (K8s), Docker, Helm, ECS/ECR} \\
+    \textbf{Cloud / DevOps}{: AWS, Azure, GCP, CircleCI, ArgoCD, Terraform (IaC)} \\
+    \textbf{Developer Tools}{: Git, Postman, VS Code, Codium, GitHub, Bitbucket} \\
+    \textbf{Compliance / Governance}{: SOC 2, GDPR} \\
+    \textbf{Collaboration}{: Slack, Jira, Confluence, Discord, MS Teams, Google Workspace, MS O365}
 
     }}
  \end{itemize}
 
+%-----------PROJECTS-----------
+\section*{Security Projects}
+\textbf{ASR-as-Code} $|$ \underline{https://github.com/J-c0d3-4Fun/ASR-as-Code} $|$ AWS SDK, Golang (Go) \hfill Aug. 2025 - Present \\
+\textit{Developed ASR-as-Code, a Go-powered open-source framework leveraging the AWS SDK to automate cloud misconfiguration detection (S3 encryption, access controls, policies) and provide remediation guidance, with a roadmap to extend coverage to IAM, EC2, and VPC} \\
+\textbf{Offsenive Security and Bug Bounty Hunting} \hfill \\
+\textit{ Active participant in Hack The Box’s CBBH labs and PortSwigger Web Security Academy; gained hands-on experience with real-world web app vulnerabilities and exploit chains.} \\
 
 %-------------------------------------------
 \end{document}
