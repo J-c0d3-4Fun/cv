@@ -13,8 +13,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -26,7 +24,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -94,24 +91,12 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-
-% Define a custom command to display certifications without numbering
-\newcommand{\Certifications}[1]{%
-    \begin{multicols*}{1}
-        \begin{itemize}[label=]
-            #1
-        \end{itemize}
-    \end{multicols*}
-}
-
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
 %----------HEADING----------
-
 
 \begin{center}
     \textbf{\Huge \scshape Jabari Brown} \\ \vspace{1pt}
@@ -122,73 +107,67 @@
 
 %-----------PROFESSIONAL SUMMARY-----------
 \section*{Professional Summary}
-Security Engineer with expertise in DevSecOps, CI/CD security, and infrastructure automation. Building specialized knowledge in Red Team operations and offensive security through systems programming and Windows/AD exploitation. Proficient in Kubernetes, Helm, Terraform, application security tooling, and low-level systems development.
+Security Engineer with expertise in DevSecOps, CI/CD pipeline security, application security auditing, and infrastructure automation. Experienced in Go and C systems development, software supply chain security, and web/Active Directory exploitation. Proficient in Kubernetes, Helm, Terraform, Pulumi, DAST/SCA tooling, and cloud security controls across AWS and enterprise environments.
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
   \resumeSubheading
-      {Security Engineer (Contract)}{Feb 2025 -- Present}
+      {Security Engineer}{Feb 2025 -- Present}
       {Meshify}{Remote}
       \resumeItemListStart
-        \resumeItem{Developed parser and notifier that integrates Dastardly DAST output into CircleCI pipelines, providing real-time vulnerability alerts; identifying and remediating vulnerabilities earlier in development cycle, reducing production security incidents}
-        \resumeItem{Engineer a vulnerability tracking dashboard using an internal API to query the National Vulnerability Database and GitHub Advisories, enabling real-time vulnerability monitoring}
-        \resumeItem{Build and deploy a log aggregation script that uploads Linux machine logs to S3 buckets, improving log retention by 100\% and reducing local storage footprint; directly supports SOC 2 audit requirements}
-        \resumeItem{Perform peer code reviews prior to deployment to validate environment configurations and product versions}
-        \resumeItem{Support SOC 2 audits by compiling technical evidence, producing security documentation, and streamlining compliance reporting}
-        \resumeItem{Conduct DR testing by validating backup integrity and recovery procedures; ensuring availability and compliance with RTOs, and documenting results for audit readiness}
-        \resumeItem{Provide on-call support as member of Incident Response team for critical infrastructure, including troubleshooting and uptime maintenance}
-        \resumeItem{Lead deployment process for new features by designing and managing Helm charts, configuring Kubernetes namespaces and network services, and enforcing deployment standards; enabling scalable, fault-tolerant infrastructure}
-        \resumeItem{Integrate Oxipng into CI/CD pipelines to compress large images without quality loss; optimizing website performance and reducing bandwidth usage}
-        \resumeItem{Manage and secure SaaS applications by implementing 2FA and SSO for passwordless authentication; strengthening access security and simplifying user onboarding across multiple platforms}
-        \resumeItem{Optimize cloud infrastructure by replacing instances and upgrading instance types; improving performance, enhancing scalability, and reducing operational costs}
-        \resumeItem{Monitor and triage Jira tickets across security and development teams, improving resolution time by \textbf{35\%} through structured prioritization and follow-up}
+        \resumeItem{Build a parser and notifier integrating Dastardly DAST output into CircleCI pipelines, delivering real-time vulnerability alerts and shifting security left in the development cycle.}
+        \resumeItem{Identify vulnerable direct and transitive NPM dependencies, evaluate affected versions, and contribute remediation PRs to update vulnerable packages.}
+        \resumeItem{Build SLSA-compliant workflows incorporating software composition analysis, manifest inspection, and SBOM generation.}
+        \resumeItem{Construct multi-architecture container images via CI/CD pipeline to enable developers across different hardware environments to run application images consistently.}
+        \resumeItem{Migrate a multi-architecture service from a monolithic architecture into production over 6+ months, collaborating with developers throughout design, implementation, and deployment.}
+        \resumeItem{Examine AWS snapshots for compliance adherence, identifying unencrypted snapshots, archiving them, and converting them to encrypted snapshots.}
+        \resumeItem{Integrate OSV Scanner and Amazon Inspector for EC2 scanning into security workflows, extending vulnerability detection coverage across dependencies and compute resources.}
+        \resumeItem{Lead migration from Terraform to Pulumi to automate infrastructure-as-code workflows and enable automated drift detection.}
+        \resumeItem{Automate software provisioning across infrastructure using Ansible.}
+        \resumeItem{Perform peer code reviews prior to deployment to validate environment configurations and product versions, supporting secure SDLC practices.}
+        \resumeItem{Support SOC 2 audits by compiling technical evidence, producing security documentation, and streamlining compliance reporting.}
+        \resumeItem{Lead deployment of new features by designing and managing Helm charts, configuring Kubernetes namespaces and network services, and enforcing deployment standards for scalable, fault-tolerant infrastructure.}
+        \resumeItem{Build and deploy a log aggregation script uploading Linux machine logs to S3 buckets, improving log retention by 100\% and reducing local storage footprint in direct support of SOC 2 audit requirements.}
+        \resumeItem{Monitor and triage Jira tickets across security and development teams, improving resolution time by 35\% through structured prioritization and follow-up.}
       \resumeItemListEnd
 
   \resumeSubheading
-      {IT Security Administrator/ Test Engineer (Contract)}{Feb 2023 -- Feb 2025}
+      {IT Security Administrator / Test Engineer (Contract)}{Feb 2023 -- Feb 2025}
       {Meshify}{Remote}
       \resumeItemListStart
-        \resumeItem{Streamlined user administration across multiple platforms while adhering to Role-Based Access Control (RBAC) standards, reducing monthly operational costs by \$4,000.}
+        \resumeItem{Streamlined user administration across multiple platforms while adhering to RBAC standards, reducing monthly operational costs by \$4,000.}
         \resumeItem{Achieved SOC 2 compliance by conducting audits of 97 vendors within the organization, ensuring adherence to security standards and regulatory requirements.}
-        \resumeItem{Implemented single sign-on (SSO) across applications using Google Cloud Platform/Workspace, enhancing user authentication and access management efficiency.}
-        \resumeItem{Used Terraform to automate infrastructure provisioning and management for AWS environments, adhering to Infrastructure as Code (IaC) principles}
-        \resumeItem{Crafted and upheld security policies and procedures to ensure robust protection and compliance.}
+        \resumeItem{Implemented SSO across applications using Google Cloud Platform/Workspace, enhancing user authentication and access management efficiency.}
+        \resumeItem{Used Terraform to automate infrastructure provisioning and management for AWS environments, adhering to Infrastructure as Code (IaC) principles.}
+        \resumeItem{Established and maintained security policies and procedures to ensure robust protection and compliance.}
       \resumeItemListEnd
-      
-
 
     \resumeSubheading
-      {Cloud Analyst}{Nov. 2022 -- Feb 2025}
+      {Cloud Analyst}{Nov 2022 -- Feb 2025}
       {MEDITECH}{Canton, MA}
       \resumeItemListStart
-        \resumeItem{Deployed 5 cloud-native services and applications to support internal operations and customer-facing environments, catering to diverse business needs and enhancing overall service delivery.}
-        \resumeItem{Automated the creation and management of over 200 firewall rules using Terraform, assuring seamless integration with existing infrastructure and enhancing network security measure.}
-        \resumeItem{Provided troubleshooting support to address 20 network issues reported by customers, ensuring timely resolution and maintaining high levels of customer satisfaction.}
-        \resumeItem{Leveraged OpenSSL to generate 15+ Certificate Signing Requests (CSRs) for X.509 certificates, and successfully installed certificates in the Windows Store Manager, securing public communication channels.}
-        \resumeItem{Administered server patch management through WSUS, maintaining system security with the latest updates and security patches.}
-        \resumeItem{Automated tenant provisioning and infrastructure maintenance using Terraform, with a focus on creating VPCs, APIs, IAM policies, and managing virtual machines (VMs) to streamline cloud deployments.}
+        \resumeItem{Automated creation and management of 200+ firewall rules using Terraform, ensuring seamless integration with existing infrastructure and enhancing network security.}
+        \resumeItem{Automated tenant provisioning and infrastructure maintenance using Terraform, including VPCs, APIs, IAM policies, and virtual machine management to streamline cloud deployments.}
+        \resumeItem{Leveraged OpenSSL to generate 15+ Certificate Signing Requests (CSRs) for X.509 certificates and installed certificates in the Windows Store Manager, securing public communication channels.}
+        \resumeItem{Deployed 5 cloud-native services and applications to support internal operations and customer-facing environments.}
+        \resumeItem{Resolved 20 network issues reported by customers, ensuring timely resolution and high customer satisfaction.}
+        \resumeItem{Administered server patch management through WSUS, maintaining system security with current updates and patches.}
     \resumeItemListEnd
 
-    
-    
-    
-    
-    
     \resumeSubheading
       {System and Support Analyst II (Contract)}{Aug 2022 -- Nov 2022}
       {Mingledorffs}{Peachtree Corners, GA}
       \resumeItemListStart
-        \resumeItem{Acted as the first line of defense in addressing 2 security incidents and assisted in analyzing dashboard data to help identify potential threats, contributing to the company's efforts in maintaining a secure environment.}
-        \resumeItem{Administered Active Directory (AD) by creating a combined 50 users, groups and organizational units following least privilege, complying with security standards and reducing risk of unauthorized access.}
-        \resumeItem{Provided Microsoft Exchange email support to 300 users, allowing seamless communication for users and troubleshooting any issues, maintaining uninterrupted email services.}
-        \resumeItem{Utilized Mimecast to analyze and respond to 10+ alerts daily, effectively identifying and mitigating spam and phishing threats, thus bolstering enterprise security posture and protecting sensitive data.}
-        \resumeItem{Improved security posture for 75 endpoints by managing patch updates, assisting end-users, remotely installing software, and proactively pushing updates to enhance endpoint security.} 
+        \resumeItem{Administered Active Directory by creating 50+ users, groups, and organizational units following least privilege principles, reducing risk of unauthorized access.}
+        \resumeItem{Utilized Mimecast to analyze and respond to 10+ alerts daily, identifying and mitigating spam and phishing threats to bolster enterprise security posture.}
+        \resumeItem{Improved security posture for 75 endpoints by managing patch updates, remotely installing software, and proactively pushing updates.}
+        \resumeItem{Provided Microsoft Exchange email support to 300 users, maintaining uninterrupted email services.}
     \resumeItemListEnd
 
   \resumeSubheading
-    {IT Support Specialist}{April 2022 -- Aug 2022}
+    {IT Support Specialist}{Apr 2022 -- Aug 2022}
     {Chicken Salad Chick}{Atlanta, GA}
     \resumeItemListStart
       \resumeItem{Implemented user account management in Azure AD (Microsoft Entra), providing access for 150 franchisees and employees while configuring multi-factor authentication (MFA).}
@@ -199,10 +178,13 @@ Security Engineer with expertise in DevSecOps, CI/CD security, and infrastructur
 
 %-----------EDUCATION-----------
 \section*{Education}
-\textbf{Gwinnett Technical College} \hfill Aug 2021 -- Dec 2023 \\
-\textit{Associate's in Cybersecurity, Lawrenceville, GA}
+\textbf{Dakota State University} \hfill Expected May 2028 \\
+\textit{Bachelor of Science in Cyber Operations, Minor in Quantum Computing} \hfill Madison, SD \\
+\vspace{2pt}
+\textbf{Gwinnett Technical College} \hfill Dec 2023 \\
+\textit{Associate's in Cybersecurity} \hfill Lawrenceville, GA
 
-%-----------Certifications-----------
+%-----------CERTIFICATIONS-----------
 \section*{Certifications}
 \begin{tabularx}{\textwidth}{X X}
 CompTIA Security+ & Certified Kubernetes Administrator (CKA) \\
@@ -211,34 +193,36 @@ AWS Solutions Architect (AWSSAA) & Red Hat Certified System Administrator (RHCSA
 eJPTv2 (Junior Penetration Tester) \\
 \end{tabularx}
 
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-    \textbf{Languages / Development}{: Golang (Go), Python, Bash, PowerShell, Terraform, Ansible} \\
-    \textbf{AppSec / Security Tools}{: Dastardly (DAST), OWASP ZAP, Burp Suite, Wireshark, Metasploit, MFA, SAML} \\
+    \textbf{Languages / Scripting}{: Go (Golang), Python, C, Bash, PowerShell, SQL} \\
+    \textbf{AppSec / Security Tools}{: DAST/SAST, SCA, Dependabot (GitHub), SLSA Framework, SBOM, Burp Suite, Dastardly, OWASP ZAP, OSV Scanner, Amazon Inspector} \\
+    \textbf{Offensive Security}{: Penetration Testing, Active Directory Exploitation, Metasploit, Hashcat, Dislocker, Wireshark} \\
     \textbf{Containers / Orchestration}{: Kubernetes (K8s), Docker, Helm, ECS/ECR} \\
-    \textbf{Cloud / DevOps}{: AWS, Azure, GCP, CircleCI, ArgoCD, Terraform (IaC)} \\
-    \textbf{Developer Tools}{: Git, Postman, VS Code, Codium, GitHub, Bitbucket} \\
-    \textbf{Compliance / Governance}{: SOC 2, GDPR} \\
-    \textbf{Collaboration}{: Slack, Jira, Confluence, Discord, MS Teams, Google Workspace, MS O365}
-
+    \textbf{Cloud / DevOps}{: AWS (IAM, EC2, S3, VPC), Azure, GCP, CircleCI, GitHub Actions, Terraform, Pulumi, Ansible, Make} \\
+    \textbf{Identity / Access}{: SAML, SSO, MFA, GCP Workspace, Azure AD / Microsoft Entra ID, RBAC, Least Privilege} \\
+    \textbf{Compliance / Governance}{: SOC 2 Type II, GDPR}
     }}
  \end{itemize}
 
 %-----------PROJECTS-----------
 \section*{Security Projects}
-\textbf{ASR-as-Code} $|$ \underline{https://github.com/J-c0d3-4Fun/ASR-as-Code} $|$ AWS SDK, Golang (Go) \hfill Aug. 2025 - Present \\
-\textit{Developed ASR-as-Code, a Go-powered open-source framework using the AWS SDK to automate cloud misconfiguration detection (S3 encryption, access controls, policies) and provide remediation guidance, with a roadmap to extend coverage to IAM, EC2, and VPC} \\
-\textbf{C-Dev-Sandbox} $|$ \underline{https://github.com/J-c0d3-4Fun/C-Dev-Sandbox} $|$ C, Network Programming, Systems Development \hfill \\
-\textit{Engineering journal documenting progression from C fundamentals through memory management, pointers, network programming, and low-level systems concepts; foundation for building Red Team tooling, malware development, and custom exploitation frameworks} \\
-\textbf{Active Directory Attacks Lab by Altered Security} (CRTP in progress) \hfill 2025 - Present\\
+\textbf{ASR-as-Code} $|$ \underline{https://github.com/J-c0d3-4Fun/ASR-as-Code} $|$ AWS SDK, Go \hfill Aug 2025 -- Present \\
+\textit{Developed an open-source Go framework using the AWS SDK to automate cloud misconfiguration detection across encryption, access controls, and policies.} \\
+\vspace{2pt}
+\textbf{CVE Dashboard} $|$ Go, REST APIs, NVD, GitHub Advisories \hfill \\
+\textit{Engineered a vulnerability tracking application in Go that ingests NVD and GitHub Security Advisory data, surfacing real-time vulnerability metrics through a searchable web UI.} \\
+\vspace{2pt}
+\textbf{C Systems \& Offensive Tooling Sandbox} $|$ \underline{https://github.com/J-c0d3-4Fun/C-Dev-Sandbox} $|$ C, Systems Programming \hfill \\
+\textit{Engineering journal covering C fundamentals, memory management, pointer manipulation, and raw sockets as a foundation for building custom offensive security tools and exploit payloads.} \\
+\vspace{2pt}
+\textbf{Active Directory Attacks Lab by Altered Security} \hfill 2025 -- Present \\
 \textit{Lab training covering Active Directory exploitation techniques, lateral movement, privilege escalation, and post-exploitation strategies in enterprise environments.} \\
-\textbf{CVE Dashboard} $|$ Internal API, National Vulnerability Database, GitHub Advisories (Golang) \hfill \\
-\textit{Engineered a vulnerability tracking dashboard using a custom-built internal API to query the National Vulnerability Database and GitHub Advisories; enables real-time monitoring and assessment of emerging vulnerabilities.} \\
-\textbf{Offensive Security and Bug Bounty Hunting} \hfill \\
-\textit{ Active participant in Hack The Box’s CBBH labs and PortSwigger Web Security Academy; gained hands-on experience with real-world web app vulnerabilities and exploit chains.} \\
+\vspace{2pt}
+\textbf{Offensive Security Research \& Active Labs} \hfill \\
+\textit{Actively executing web application exploit chains via PortSwigger Web Security Academy and HTB CBBH labs.}
 
 %-------------------------------------------
 \end{document}
